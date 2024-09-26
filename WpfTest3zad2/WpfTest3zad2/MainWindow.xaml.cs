@@ -59,17 +59,17 @@ namespace WpfTest3zad2
 
         private void rbDraw_Click(object sender, RoutedEventArgs e)
         {
-            inkCanvas1.EditingMode = InkCanvasEditingModeProperty;
+            inkCanvas1.EditingMode = InkCanvasEditingMode.Ink;
         }
 
         private void rbEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            inkCanvas1.EditingMode = InkCanvasEditingMode.Select;
         }
 
         private void rbDelete_Click(object sender, RoutedEventArgs e)
         {
-
+            inkCanvas1.EditingMode = InkCanvasEditingMode.EraseByStroke;
         }
     }
 }

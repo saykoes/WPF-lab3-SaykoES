@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <InkCanvas x:Name="inkCanvas1" EditingMode="">
+        <InkCanvas x:Name="inkCanvas1">
             <InkCanvas.DefaultDrawingAttributes>
                 <DrawingAttributes x:Name="InkAttr" Color="Red" Height="10" Width="10"/>
             </InkCanvas.DefaultDrawingAttributes>
@@ -19,9 +19,9 @@
             <ComboBoxItem Content="Blue" Selected="ComboBoxItem_Selected"/>
         </ComboBox>
 
-        <RadioButton x:Name="rbDraw" Content="Draw" Click="rbDraw_Click" Margin="120,3.5,0,0" />
-        <RadioButton x:Name="rbEdit" Content="Edit" Click="rbEdit_Click" Margin="180,3.5,0,0" />
-        <RadioButton x:Name="rbDelete" Content="Delete" Click="rbDelete_Click" Margin="230,3.5,0,0" />
+        <RadioButton x:Name="rbDraw" Content="Draw" Click="rbDraw_Click" Margin="120,3.5,0,0" Width="50" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbEdit" Content="Edit" Click="rbEdit_Click" Margin="180,3.5,0,0" Width="50" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbDelete" Content="Delete" Click="rbDelete_Click" Margin="230,3.5,0,0" Width="55" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
 
     </Grid>

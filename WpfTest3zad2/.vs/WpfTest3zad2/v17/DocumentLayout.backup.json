@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\SaykoES\\WPF-lab3-SaykoES\\WpfTest3zad2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4021AB10-063E-4F21-BFD3-D60F0E260AA9}|WpfTest3zad2\\WpfTest3zad2.csproj|c:\\users\\saykoes\\wpf-lab3-saykoes\\wpftest3zad2\\wpftest3zad2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4021AB10-063E-4F21-BFD3-D60F0E260AA9}|WpfTest3zad2\\WpfTest3zad2.csproj|C:\\Users\\SaykoES\\WPF-lab3-SaykoES\\WpfTest3zad2\\wpftest3zad2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4021AB10-063E-4F21-BFD3-D60F0E260AA9}|WpfTest3zad2\\WpfTest3zad2.csproj|solutionrelative:wpftest3zad2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -42,9 +42,9 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SaykoES\\WPF-lab3-SaykoES\\WpfTest3zad2\\WpfTest3zad2\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfTest3zad2\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\SaykoES\\WPF-lab3-SaykoES\\WpfTest3zad2\\WpfTest3zad2\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "WpfTest3zad2\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAjwC0AAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\SaykoES\\WPF-lab3-SaykoES\\WpfTest3zad2\\WpfTest3zad2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfTest3zad2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAASwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T02:59:07.407Z",
               "EditorCaption": ""

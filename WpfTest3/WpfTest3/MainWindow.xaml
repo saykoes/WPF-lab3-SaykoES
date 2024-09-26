@@ -18,7 +18,7 @@
             <MenuItem Header="_About" Click="About_Click" MouseEnter="MenuItem_MouseEnter"/>
         </Menu>
 
-        <ToolBar MaxHeight="30" Margin="0,0,0,350">
+        <ToolBar MaxHeight="30" VerticalAlignment="Top" Margin="0,20,0,0">
             <Button Content="Yellow" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
             <Separator/>
             <Button Content="Red" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
