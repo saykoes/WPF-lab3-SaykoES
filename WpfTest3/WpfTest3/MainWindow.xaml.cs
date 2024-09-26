@@ -25,22 +25,72 @@ namespace WpfTest3
             InitializeComponent();
         }
 
-        private void Close_MenuItem_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Close Program
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Close_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
         }
 
-        private void rbColor_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Developer info
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void About_Click(object sender, RoutedEventArgs e)
         {
-            var radio = (sender as RadioButton);
-            string radioName = radio.Name;
+            MessageBox.Show("Sayko Egor, 2024");
+        }
+
+        /// <summary>
+        /// Changing colors
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Color_Click(object sender, RoutedEventArgs e)
+        {
+            var radio = (sender as System.Windows.Controls.Primitives.ButtonBase);
+            string btnContent = radio.Content.ToString().TrimStart('_');
             
-            if (radioName == "rbRed")
+            if (btnContent == "Red")
                 mainMenu.Background = Brushes.Red;
-            if (radioName == "rbYellow")
+            if (btnContent == "Yellow")
                 mainMenu.Background = Brushes.Yellow;
+            if (btnContent == "Blue")
+                mainMenu.Background = Brushes.Blue;
+            if (btnContent == "Green")
+                mainMenu.Background = Brushes.Green;
+        }
 
+        /// <summary>
+        /// Status Bar info
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_MouseEnter(object sender, MouseEventArgs e)
+        {
+            var btn = (sender as System.Windows.Controls.Primitives.ButtonBase);
+            string btnContent = btn.Content.ToString().TrimStart('_');
+            if (btnContent == "Yellow" || btnContent == "Red" || btnContent == "Green" || btnContent == "Blue")
+                StatusText.Text = "Make it " + btnContent + "!";
+            else if (btnContent == "Close") StatusText.Text = "Exits the program";
+            else if (btnContent == "About") StatusText.Text = "Developer info";
+        }
 
+        /// <summary>
+        /// Status Bar info for MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItem_MouseEnter(object sender, MouseEventArgs e)
+        {
+            var btn = (sender as System.Windows.Controls.MenuItem);
+            string btnContent = btn.Header.ToString();
+            if (btnContent == "_Close") StatusText.Text = "Exits the program";
+            else if(btnContent == "_About") StatusText.Text = "Developer info";
         }
     }
 }

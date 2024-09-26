@@ -6,16 +6,38 @@
         xmlns:local="clr-namespace:WpfTest3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="mainGrid">
-        <Menu x:Name="mainMenu">
-            <MenuItem Header="_File">
-                <RadioButton x:Name="rbYellow" Content="_Yellow" Click="rbColor_Click"/>
-                <RadioButton x:Name="rbRed" Content="_Red" Click="rbColor_Click"/>
-                <RadioButton x:Name="rbBlue" Content="_Blue" Click="rbColor_Click"/>
-                <RadioButton x:Name="rbGreen" Content="_Green" Click="rbColor_Click"/>
-                <MenuItem Header="_Close" Click="Close_MenuItem_Click" Click="rbColor_Click"/>
+    <Grid x:Name="mainGrid" >
+        <Menu x:Name="mainMenu" >
+            <MenuItem Header="_Menu">
+                <RadioButton x:Name="rbYellow" Content="_Yellow" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
+                <RadioButton x:Name="rbRed" Content="_Red" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
+                <RadioButton x:Name="rbBlue" Content="_Blue" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
+                <RadioButton x:Name="rbGreen" Content="_Green" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
+                <MenuItem Header="_Close" Click="Close_Click" MouseEnter="MenuItem_MouseEnter"/>
             </MenuItem>
+            <MenuItem Header="_About" Click="About_Click" MouseEnter="MenuItem_MouseEnter"/>
         </Menu>
-        
+
+        <ToolBar MaxHeight="30" Margin="0,0,0,350">
+            <Button Content="Yellow" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
+            <Separator/>
+            <Button Content="Red" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
+            <Separator/>
+            <Button Content="Blue" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
+            <Separator/>
+            <Button Content="Green" Click="Color_Click" MouseEnter="Btn_MouseEnter"/>
+            <Separator/>
+            <Button Content="About" Click="About_Click" MouseEnter="Btn_MouseEnter" />
+            <Separator/>
+            <Button Content="Close" Click="Close_Click" MouseEnter="Btn_MouseEnter"/>
+        </ToolBar>
+
+        <StatusBar DockPanel.Dock="Bottom" VerticalAlignment="Bottom">
+            <TextBlock x:Name="StatusText" Text="Welcome!" />
+        </StatusBar>
+
     </Grid>
+    
+    
+    
 </Window>
